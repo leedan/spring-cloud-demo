@@ -15,7 +15,7 @@ public class UserService {
     public User getUser(int id) {
         return userRepository.getUserById(id);
     }
-//    public void updateUser(int id,String userName){
-//        userRepository.updateNameById(id,userName);
-//    }
+    public void updateUser(int id,String userName){
+        userRepository.updateNameById(id,userName);
+    }
 }

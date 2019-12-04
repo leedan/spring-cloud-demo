@@ -16,11 +16,11 @@ public class UserController {
         return userService.getUser(id).toString();
     }
 
-//    @RequestMapping(value = "/updateUser",method = RequestMethod.GET)
-//    @ResponseBody
-//    public String updateUser(int id, String userName){
-//        userService.updateUser(id,userName);
-//
-//        return "Success";
-//    }
+    @RequestMapping(value = "/updateUser",method = RequestMethod.GET)
+    @ResponseBody
+    public String updateUser(int id, String userName){
+        userService.updateUser(id,userName);
+
+        return "Success";
+    }
 }
